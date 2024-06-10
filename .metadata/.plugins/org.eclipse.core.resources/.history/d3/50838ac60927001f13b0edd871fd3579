@@ -1,0 +1,56 @@
+package com.advjava;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class StackMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);		
+	    Stack<Integer> stc = new Stack<>();
+	    
+		// Object of main class
+        Collectionstack collstack = new Collectionstack();
+        int selection;
+        
+        collstack.addElement(collstack,89);
+        collstack.addElement(collstack,70);
+        collstack.addElement(collstack,55);
+        collstack.addElement(collstack,48);
+        collstack.addElement(collstack,39);
+    	
+        collstack.displayinfo(collstack);
+    	
+        collstack.removeElement(collstack);
+
+        collstack.displayinfo(collstack);
+        
+        
+        
+//        // Select to choose a method to perform
+//        do {
+//            System.out.println("\n1. PUSH");
+//            System.out.println("2. Pop");
+//            System.out.println("3. Exit");
+//            System.out.print("Enter your choice: ");
+//            selection = sc.nextInt();
+//            sc.nextLine(); // Consume newline character
+//
+//            switch (selection) {
+//              case 1:
+//            	  collstack.pushStack();
+//                break;
+//              case 2:
+//            	  collstack.popStack();
+//                break;
+//              case 3:
+//                break;
+//              default:
+//                System.out.println("Invalid Choice! Please try again.");
+//            }
+//          } while (selection != 4); 
+
+	}
+
+}

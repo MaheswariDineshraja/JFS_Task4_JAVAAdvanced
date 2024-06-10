@@ -1,0 +1,30 @@
+package com.advjava;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class StudentHashMapMain {
+
+	public static void main(String[] args) {
+		
+		//HashMap
+		HashMap<String , Integer> hasmap=new HashMap<String, Integer>();
+		//User input for name and grade
+		Scanner sc = new Scanner(System.in);
+	    String stdName;
+	    int stdGrade;		
+
+	    System.out.println("Keyin the Number of Students");
+	    int stdNum = sc.nextInt();
+	    for (int i = 0; i < stdNum; i++) {
+	      System.out.print("Student Name: ");
+	      stdName = sc.next();
+	      System.out.print("Student Grade: ");
+	      stdGrade = sc.nextInt();
+
+	      stdMap.put(stdName, stdGrade);
+	    }
+
+	}
+
+}

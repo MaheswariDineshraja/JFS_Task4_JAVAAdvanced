@@ -1,0 +1,33 @@
+package com.advjava;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class VoterMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		BufferedReader bufferedReader=new  BufferedReader(new InputStreamReader(System.in));
+        int age=Integer.parseInt(bufferedReader.readLine());
+        
+        try
+        {
+            if(age<18)
+            {
+                throw new Voter("Not eligible for casting vote");
+            }
+            else
+            {
+                System.out.println("Eligible for voting");
+            }
+        }
+        catch(Exception exception)
+        {
+            System.out.println(exception.getMessage());
+        }
+
+
+	}
+
+}

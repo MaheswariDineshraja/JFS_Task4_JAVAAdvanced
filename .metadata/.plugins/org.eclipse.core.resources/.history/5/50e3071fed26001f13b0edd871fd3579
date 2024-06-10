@@ -1,0 +1,13 @@
+package com.advjava;
+
+public class Voter {
+
+	public InvalidVoter() {
+		super();
+	}
+	
+	public InvalidVoter(String message) {
+		super(message);
+	}
+
+}

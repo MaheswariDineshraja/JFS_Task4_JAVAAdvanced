@@ -1,0 +1,21 @@
+package com.advjava;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+public class StudentHashMap {
+	
+	public static void main(String[] args) {
+	
+	HashMap<String , Integer> hasmap=new HashMap<String, Integer>();
+	
+	hasmap.put("A",1);
+	
+	
+	private String name;
+	private int grade;
+	
+	}
+
+}

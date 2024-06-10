@@ -1,0 +1,13 @@
+package com.advjava;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class StudentHashMap {
+	
+	Map<String , String> map=new HashMap<String, String>();
+	
+	Scanner sc = new Scanner(System.in);
+	
+
+}

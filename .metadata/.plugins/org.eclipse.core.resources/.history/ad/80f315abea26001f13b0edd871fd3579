@@ -1,0 +1,76 @@
+package com.advjava;
+
+//public class AgeNotWithinRangeException extends Exception{
+//	
+//	//Data members of class
+//	private int rollno;
+//	private String name;
+//	private int age;
+//	private String course;
+//	
+//	//Default constructor of Class Student
+//	public AgeNotWithinRangeException() {
+//        super();
+//    }
+//	
+//	//User defined exception of age is not between 15 & 21
+//	public AgeNotWithinRangeException(String message) {		
+//			super(message);
+//		
+//	}
+//}
+	
+	
+public class Student {
+	
+	// Data Members of Class Student.
+    private int rollno;    
+    private String name;
+    private int age;
+    private String course;
+    
+ // Default Constructor of Class Student.
+    public Student() {
+        super();
+    }
+    
+ 
+	// Parameterized Constructor of Class Student
+	public Student(int rollno,String name,int age,String course)
+	{
+		super();
+		this.rollno=rollno;
+		this.name=name;
+		this.age=age;
+		this.course=course;
+	}
+	
+	//user defined Exception for age not within range
+	class AgeException extends Exception {
+        public AgeException(String message) {
+            super(message);
+        }
+    }
+	
+	public void exceptionshow() throws AgeException {
+		
+		if(age <= 15 || age >= 21)
+		{
+			throw new AgeException("AgeNotWithinRangeException");
+		}
+		else
+		{
+			System.out.println("Roll Number:" + rollno);				
+			System.out.println("age:" + age);
+			System.out.println("name:" + name);
+			System.out.println("course:" + course);
+		}
+//		for(char c: name.toCharArray())
+//		{
+//			
+//		}
+	}
+	
+	
+
+}

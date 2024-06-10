@@ -1,0 +1,14 @@
+package com.advjava;
+
+public class Weekdays {
+
+	public static void main(String[] args) {
+	
+		//store name of weekdays in an array
+		String[] Days = {"Sunday", "Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"};
+		
+		
+
+	}
+
+}

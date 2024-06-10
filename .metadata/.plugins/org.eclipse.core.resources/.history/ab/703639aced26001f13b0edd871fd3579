@@ -1,0 +1,13 @@
+package com.advjava;
+
+public class Voter extends Exception {
+
+	public Voter() {
+		super();
+	}
+	
+	public Voter(String message) {
+		super(message);
+	}
+
+}

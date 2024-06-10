@@ -1,0 +1,111 @@
+package com.advjava;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Collectionstack {
+	
+	Scanner sc = new Scanner(System.in);
+	Stack<Integer> stc = new Stack<>();
+
+	// Pushing element onto the stack
+    public int pushStack(Stack stk,  int element) {
+    	stk.push(element);
+		System.out.println("Element Added");
+		return element;
+        
+    }
+    
+    //Popping elements from stack
+    public void popStack(Stack stk) {
+    	stk.pop();
+    	System.out.println("-->Top element removed!!!");
+    	}
+
+    	public void displayinfo(Stack stk) {
+    	int size=stk.size();
+    	System.out.print("\n\nThe elements in Stack are :\n");
+    	for(int i=0;i<size;i++) {
+    		System.out.print(stk.get(i)+" ");
+    		}
+    	}
+    
+//    // 
+//    public void popStack() {
+//        System.out.println("Popping elements from the stack.");
+//        while (true) {
+//            String input = sc.nextLine();
+//            if (input.equalsIgnoreCase("exit")) {
+//                System.out.println("Exiting...");
+//                break;
+//            }
+//            // if stack is empty it will show this message
+//            if (stc.empty()) {
+//                System.out.println("Stack is Empty..");
+//            }
+//            try {
+//            // changing input from string to Integer
+//                int num = Integer.parseInt(input);
+//                if (stc.contains(num)) {
+//                    stc.removeElement(num);
+//                    System.out.println(num + " removed from the stack.");
+//                    System.out.println("Elements in the stack: " + stc);
+//                } else {
+//                    System.out.println(num + " is not found in the stack.");
+//                }
+//            } catch (NumberFormatException e) {
+//                System.out.println("Invalid input. Please enter an integer or 'exit' to stop.");
+//            }
+//        }
+//            System.out.println("Elements in the stack: " + stc);
+//    }
+    
+    
+public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);		
+	    Stack<Integer> stc = new Stack<>();
+	    
+		// Object of main class
+        Collectionstack collstack = new Collectionstack();            
+        collstack.pushStack(collstack,89);
+        collstack.pushStack(collstack,70);
+        collstack.pushStack(collstack,55);
+        collstack.pushStack(collstack,48);
+        collstack.pushStack(collstack,39);
+    	
+        collstack.displayinfo(collstack);
+    	
+        collstack.popStack(collstack);
+
+        collstack.displayinfo(collstack);
+        
+        
+        
+//        // Select to choose a method to perform
+//        do {
+//            System.out.println("\n1. PUSH");
+//            System.out.println("2. Pop");
+//            System.out.println("3. Exit");
+//            System.out.print("Enter your choice: ");
+//            selection = sc.nextInt();
+//            sc.nextLine(); // Consume newline character
+//
+//            switch (selection) {
+//              case 1:
+//            	  collstack.pushStack();
+//                break;
+//              case 2:
+//            	  collstack.popStack();
+//                break;
+//              case 3:
+//                break;
+//              default:
+//                System.out.println("Invalid Choice! Please try again.");
+//            }
+//          } while (selection != 4); 
+
+	}
+
+
+}

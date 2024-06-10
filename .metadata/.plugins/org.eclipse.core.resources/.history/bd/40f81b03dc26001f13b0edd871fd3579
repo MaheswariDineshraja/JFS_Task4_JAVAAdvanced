@@ -1,0 +1,35 @@
+package com.advjava;
+
+public class Student extends Exception{
+	
+	//Data members of class
+	private int rollno;
+	private String name;
+	private int age;
+	private String course;
+	
+	//Default constructor of Class Student
+	public Student() {
+        super();
+    }
+	
+	//User defined exception of age is not between 15 & 21
+	public void AgeNotWithinRangeException(String message){
+
+		{
+			super(message);
+		}
+	}
+	// Parameterized Constructor of Class Student
+	public Student(int rollno,String name,int age,String course)
+	{
+		super();
+		this.rollno=rollno;
+		this.name=name;
+		this.age=age;
+		this.course=course;
+	}
+	
+	
+
+}

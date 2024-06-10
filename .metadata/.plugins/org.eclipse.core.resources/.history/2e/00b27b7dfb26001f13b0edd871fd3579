@@ -1,0 +1,20 @@
+package com.advjava;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class StudentHashMapMain {
+
+	public static void main(String[] args) {
+		
+		//HashMap
+		HashMap<String , Integer> hasmap=new HashMap<String, Integer>();
+		//User input for name and grade
+		Scanner sc = new Scanner(System.in);
+	    String stdName;
+	    int stdGrade;
+		
+
+	}
+
+}
